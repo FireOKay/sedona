@@ -6,7 +6,7 @@
 </head>
 <body>
 	<header>
-		<img src="img/logo.svg" alt="Седона" width="768" height="500">
+		<img src="img/logo.svg" alt="Фоновая картинка Седона" width="768" height="500">
 		<nav>
 			<ul>
 				<li><a href="#">Информация</a></li>
@@ -50,10 +50,10 @@
 		</section>
 		<h2 class="visually-hidden">Причины</h2>
 		<section class="second-reason">
-			<img src="img/second-reason.svg" alt="Мост Дьявола">
 			<h3>Там есть мост дьявола</h3>
 			<span>- №2 -</span>
 			<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+			<img src="img/second-reason.svg" alt="Мост Дьявола">
 		</section>
 		<div class="another-reasons">
 			<section class="third-reason">
@@ -76,13 +76,14 @@
 			<h2 class="visually-hidden">Оформление поездки</h2>
 			<b>Заинтересовались?</b>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<button class="search-trip">Поиск гостиницы в Седоне</button>
 			<img src="" alt="Карта местности" class="map">
-			<button class="visually-hidden">Поиск гостиницы в Седоне</button>
 		</section>
 	</main>
 	<footer>
 		<span class="footer-hashtag">#VisitSedona</span>
 		<div class="footer-social">
+			<h2 class="visually-hidden">Социальные сети</h2>
 			<ul>
 				<li><a href="" class="social-button">Твиттер</a></li>
 				<li><a href="" class="social-button">Фейсбук</a></li>
@@ -90,25 +91,28 @@
 			</ul>
 		</div>
 		<p>
+			<h2 class="visually-hidden">Разработано:</h2>
 			<a href=""><img src="img/copyright.svg" alt="Копирайт"></a>
 		</p>
-		<form action="">
-			<p>
-				Дата заезда:
-				<input type="text" placeholder="24 Апреля 2017" value="">
-			</p>
-			<p>
-				Дата выезда:
-				<input type="text" placeholder="4 Июля 2017" value="">
-			</p>
-			<p>
-				Взрослые:
-				<input type="number" placeholder="2" value="">
-				Дети:
-				<input type="number" placeholder="2" value="">
-			</p>
-			<a href="" class="trip-search">Найти</a>
-		</form>
+		<section class="modal modal-search">
+			<form action="">
+				<p>
+					<label for="date-in">Дата заезда:</label>
+					<input id="date-in" type="text" placeholder="24 Апреля 2017" value="">
+				</p>
+				<p>
+					<label for="date-out">Дата выезда:</label>
+					<input id="date-out" type="text" placeholder="4 Июля 2017" value="">
+				</p>
+				<p>
+					<label for="adults">Взрослые:</label>
+					<input id="adults" type="number" placeholder="2" value="">
+					<label for="children">Дети:</label>
+					<input id="children" type="number" placeholder="2" value="">
+				</p>
+				<a href="" class="trip-search">Найти</a>
+			</form>
+		</section>
 	</footer>
 </body>
 </html>

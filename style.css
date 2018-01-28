@@ -1,0 +1,125 @@
+html, 
+body {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "PT Sans Regular", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 26px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+ul {
+	list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation a {
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 14px;
+	line-height: 26px;
+	text-decoration: none;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.description-sedona {
+  font-family: PT Sans Bold;
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.advantage-list h3 {
+  color: #000000;
+  font-family: PT Sans Bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantage-list p {
+  color: #000000;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.first-reason div,
+.second-reason div {
+  background-color: #81b3d2;
+}
+
+.third-reason,
+.fourth-reason,
+.fifth-reason {
+  background-color: #eeeeee;
+}
+
+.trip {
+  text-align: center;
+}
+
+.trip b {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.trip p {
+  line-height: 24px;
+}
+
+.button {
+  border: none;
+  color: #ffffff;
+  font-family: PT Sans Bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.trip-search {
+  background-color: #766357;
+}
+
+.footer-hashtag {
+  color: #000000;
+  font-family: PT Sans Bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.modal-search,
+.modal-search input[type="text"] {
+  color: #000000;
+  font-family: PT Sans Bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.trip-find {
+  background-color: #81b3d2;
+}

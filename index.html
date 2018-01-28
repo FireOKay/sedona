@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sedona</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-		<img src="img/logo.svg" alt="Фоновая картинка Седона" width="768" height="500">
-		<nav>
+		<nav class="main-navigation">
 			<ul>
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
@@ -15,53 +15,58 @@
 				<li><a href="#">Гостиницы</a></li>
 			</ul>
 		</nav>
+    <img src="img/logo.svg" alt="Фоновая картинка Седона" width="768" height="500">
 	</header>
 	<main>
 		<div class="description">
 			<h1 class="visually-hidden">Седона</h1>
-			<p>Седона - небольшой городок в Аризоне, заслуживающий большего!<br>
-			Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+			<span class="description-sedona">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</span><br>
+			<span>Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</span>
 		</div>
 		<h2 class="visually-hidden">Преимущества</h2>
 		<ul class="advantage-list">
-			<li>
-				<h3>Настоящий городок</h3>
-				<p>- №1 -<br>
-				Седона - не аттракцион для туристов, там течет своя жизнь</p>
+			<li class="first-reason">
+        <div>
+          <h3>Настоящий городок</h3>
+          <p>- №1 -<br>
+          Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
 				<img src="img/first-reason.svg" alt="Город">
 			</li>
-			<li>
-				<h3>Там есть мост дьявола</h3>
-				<p>- №2 -<br>
-				Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+			<li class="second-reason">
+        <div>
+          <h3>Там есть мост дьявола</h3>
+          <p>- №2 -<br>
+          Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
 				<img src="img/second-reason.svg" alt="Мост Дьявола">
 			</li>
-			<li>
+			<li class="third-reason">
 				<h3>Небольшая площадь</h3>
 				<p>- №3 -<br>
 				Все достопримечательности находятся очень близко</p>
 			</li>
-			<li>
+			<li class="fourth-reason">
 				<h3>Красивая дорога</h3>
 				<p>- №4 -<br>
 				Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 			</li>
-			<li>
+			<li class="fifth-reason">
 				<h3>Мало туристов</h3>
 				<p>- №5 -<br>
 				Большинство едет в Гранд Каньон и толпится там</p>
 			</li>
 			<li>
 				<ul class="more-advantages">
-					<li>
+					<li class="another-reason">
 						<h3>Жилье</h3>
 						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</li>
-					<li>
+					<li class="another-reason">
 						<h3>Еда</h3>
 						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</li>
-					<li>
+					<li class="another-reason">
 						<h3>Сувениры</h3>
 						<p>Не только китайского, но и местного производства!</p>
 					</li>
@@ -69,25 +74,25 @@
 			</li>
 		</ul>
 		<section class="trip">
-			<h2 class="visually-hidden">Оформление поездки</h2>
+			<h3 class="visually-hidden">Оформление поездки</h3>
 			<b>Заинтересовались?</b>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<button class="search-trip">Поиск гостиницы в Седоне</button>
+			<button class="button trip-search">Поиск гостиницы в Седоне</button><br>
 			<img src="" alt="Карта местности" class="map">
 		</section>
 	</main>
 	<footer>
 		<span class="footer-hashtag">#VisitSedona</span>
 		<div class="footer-social">
-			<h2 class="visually-hidden">Социальные сети</h2>
+			<h3 class="visually-hidden">Социальные сети</h3>
 			<ul>
 				<li><a href="" class="social-button">Твиттер</a></li>
 				<li><a href="" class="social-button">Фейсбук</a></li>
 				<li><a href="" class="social-button">Ютуб</a></li>
 			</ul>
 		</div>
-		<p>
-			<h2 class="visually-hidden">Разработано:</h2>
+		<p class="footer-copyright">
+			<b class="visually-hidden">Разработано:</b>
 			<a href=""><img src="img/copyright.svg" alt="Копирайт"></a>
 		</p>
 		<section class="modal modal-search">
@@ -106,7 +111,7 @@
 					<label for="children">Дети:</label>
 					<input id="children" type="number" placeholder="2" value="">
 				</p>
-				<a href="" class="trip-search">Найти</a>
+				<a href="" class="button trip-find">Найти</a>
 			</form>
 		</section>
 	</footer>

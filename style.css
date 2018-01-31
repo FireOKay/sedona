@@ -17,11 +17,71 @@ ul {
   padding: 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 768px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  min-height: 70px;
+}
+
+.main-navigation {
+  -ms-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-height: 55px;
+}
+
+.main-logo {
+  width: 768px;
+  height: 500px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+}
+
+.main-navigation-wrapper .container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.site-navigation {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  width: 768px;
+}
+
+
 .main-navigation a {
 	background-color: #ffffff;
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
+  text-align: center;
 	text-decoration: none;
 }
 
@@ -35,15 +95,20 @@ ul {
   opacity: 0.3;
 }
 
-.description-sedona {
+.description {
+  text-align: center;
+}
+
+.description-sedona  {
   font-family: PT Sans Bold;
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
+  margin-top: 60px;
+  margin-bottom: 35px;
 }
 
 .advantage-list h3 {
-  color: #000000;
   font-family: PT Sans Bold;
   font-size: 21px;
   line-height: 21px;
@@ -51,7 +116,6 @@ ul {
 }
 
 .advantage-list p {
-  color: #000000;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -62,10 +126,69 @@ ul {
   background-color: #81b3d2;
 }
 
+.first-reason {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 258px;
+  margin-top: 55px;
+}
+
+.first-reason-description,
+.second-reason-description {
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 256px;
+}
+
+.more-advantages {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.another-reason {
+  width: 256px;
+  height: 330px;
+}
+
+.another-three-reasons {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.second-reason {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 258px;
+}
+
+.second-reason div {
+  order: 2;
+}
+
 .third-reason,
 .fourth-reason,
 .fifth-reason {
   background-color: #eeeeee;
+  height: 256px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 256px;
 }
 
 .trip {
@@ -92,6 +215,35 @@ ul {
 
 .trip-search {
   background-color: #766357;
+  margin-top: 50px;
+  padding: 35px 140px;
+}
+
+.trip-search:hover,
+.trip-search:focus {
+  background-color: #604e43;
+}
+
+.trip-search:active {
+  background-color: #503e33;
+}
+
+.footer-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+  height: 120px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  width: 256px;
 }
 
 .footer-hashtag {
@@ -100,19 +252,11 @@ ul {
   font-size: 21px;
   line-height: 21px;
   text-transform: uppercase;
-
-}
-
-.footer-social {
-  text-align: center;
-}
-
-.footer-copyright {
-  text-align: center;
 }
 
 .modal-search,
-.modal-search input[type="text"] {
+.modal-search input[type="text"],
+.modal-search input[type="number"] {
   color: #000000;
   font-family: PT Sans Bold;
   font-size: 14px;
@@ -120,6 +264,32 @@ ul {
   text-transform: uppercase;
 }
 
+.modal-search input[type="text"],
+.modal-search input[type="number"] {
+  background-color: #f2f2f2;
+}
+
+.modal-search input[type="text"]:hover,
+.modal-search input[type="number"]:hover {
+  background-color: #ebebeb;
+}
+
+.modal-search input[type="text"]:focus,
+.modal-search input[type="number"]:focus {
+  background-color: #ffffff;
+}
+
 .trip-find {
   background-color: #81b3d2;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: PT Sans Bold;
+  src: url("./fonts/ptsansbold.woff2");
+}
+
+@font-face {
+  font-family: PT Sans Regular;
+  src: url("./fonts/ptsans.woff2");
 }

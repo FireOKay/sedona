@@ -35,7 +35,7 @@ ul {
 }
 
 .main-header {
-  min-height: 70px;
+  min-height: 55px;
 }
 
 .main-navigation {
@@ -69,20 +69,32 @@ ul {
 }
 
 .site-navigation {
-  display: inline;
+  font-family: PT Sans Bold;
+  position: relative;
   margin: 0;
   padding: 0;
   width: 768px;
 }
 
+.site-navigation li {
+  display: inline;
+}
 
 .main-navigation a {
 	background-color: #ffffff;
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
+  padding-bottom: 18px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 25px;
   text-align: center;
 	text-decoration: none;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: 120px;
 }
 
 .main-navigation a:hover,
@@ -154,8 +166,18 @@ ul {
 }
 
 .another-reason {
+  height: 270px;
+  text-align: center;
+  margin-top: 60px;
   width: 256px;
-  height: 330px;
+}
+
+.another-reason img {
+  height: 72px;
+}
+
+.another-reason {
+  background-image: url("images/another-reason-1.svg") no-repeat;
 }
 
 .another-three-reasons {
@@ -228,21 +250,37 @@ ul {
   background-color: #503e33;
 }
 
+.social li {
+  display: inline;
+  width: 85.3px;
+}
+
+.social-button img {
+  background-color: #81b3d2;
+  height: 20px;
+  padding: 15px;
+  width: 20px;
+}
+
 .footer-content {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  height: 120px;
 }
 
-.footer-hashtag,
 .footer-social,
 .footer-copyright {
   height: 120px;
   margin-top: 35px;
   margin-bottom: 35px;
   text-align: center;
+}
+
+.footer-hashtag,
+.footer-copyright {
   width: 256px;
 }
 
@@ -250,8 +288,34 @@ ul {
   color: #000000;
   font-family: PT Sans Bold;
   font-size: 21px;
+  height: 120px;
   line-height: 21px;
+  margin-bottom: 52px;
+  margin-top: 52px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.footer-social {
+  margin-left: 43.625px;
+  margin-right: 43.625px;
+}
+
+.footer-social li {
+  margin-left: 3.5px;
+}
+
+.footer-copyright {
+  margin-top: 45px;
+}
+
+.modal-search {
+  border: 3px solid #efefef;
+  height: 290px;
+  margin-left: 104px;
+  margin-right: 104px;
+  padding: 55px;
+  width: 470px;
 }
 
 .modal-search,
@@ -281,7 +345,15 @@ ul {
 
 .trip-find {
   background-color: #81b3d2;
+  padding-bottom: 17px;
+  padding-left: 195px;
+  padding-right: 195px;
+  padding-top: 17px;
   text-decoration: none;
+}
+
+.modal-search-form p:nth-child(4) {
+  margin-top: 54px;
 }
 
 @font-face {

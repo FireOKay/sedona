@@ -176,10 +176,6 @@ ul {
   height: 72px;
 }
 
-.another-reason {
-  background-image: url("images/another-reason-1.svg") no-repeat;
-}
-
 .another-three-reasons {
   display: -webkit-flex;
   display: -moz-flex;
@@ -215,6 +211,7 @@ ul {
 
 .trip {
   text-align: center;
+  height: 849px;
 }
 
 .trip b {
@@ -250,15 +247,66 @@ ul {
   background-color: #503e33;
 }
 
-.social li {
-  display: inline;
-  width: 85.3px;
+.social {
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 44px;
+  margin-right: 44px;
+  margin-top: 10px;
+  width: 168px;
 }
 
-.social-button img {
+.social-button {
   background-color: #81b3d2;
+  padding: 16px 25px;
+  width: 50px;
+}
+
+.twitter,
+.facebook,
+.youtube {
+  position: relative;
+  color: #ffffff; 
+}
+
+.twitter::before {
+  background-image: url("images/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: "";
   height: 20px;
-  padding: 15px;
+  left: 17.5px;
+  position: absolute;
+  top: 17.5px;
+  width: 20px;
+}
+
+.facebook::before {
+  background-image: url("images/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: "";
+  height: 25px;
+  left: 18px;
+  position: absolute;
+  top: 15px;
+  width: 25px;
+}
+
+.youtube::before {
+  background-image: url("images/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: "";
+  height: 20px;
+  left: 15px;
+  position: absolute;
+  top: 17px;
   width: 20px;
 }
 
@@ -271,12 +319,24 @@ ul {
   height: 120px;
 }
 
-.footer-social,
-.footer-copyright {
+.footer-social {
   height: 120px;
   margin-top: 35px;
   margin-bottom: 35px;
   text-align: center;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active::before {
+  opacity: 0.3;
 }
 
 .footer-hashtag,
@@ -291,22 +351,31 @@ ul {
   height: 120px;
   line-height: 21px;
   margin-bottom: 52px;
-  margin-top: 52px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.footer-social {
-  margin-left: 43.625px;
-  margin-right: 43.625px;
-}
-
-.footer-social li {
-  margin-left: 3.5px;
+.footer-hashtag span {
+  display: block;
+  margin-top: 50px;
 }
 
 .footer-copyright {
-  margin-top: 45px;
+  height: 120px;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.footer-copyright span {
+  display: block;
+  margin-left: 45px;
+  margin-top: 50px;
+}
+
+
+svg:hover,
+svg:focus {
+  fill: #81b3d2;
 }
 
 .modal-search {

@@ -39,15 +39,11 @@ ul {
 }
 
 .main-navigation {
-  -ms-align-items: center;
   align-items: center;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   margin: 0;
   padding: 0;
+  position: relative;
   min-height: 55px;
 }
 
@@ -61,10 +57,6 @@ ul {
 }
 
 .main-navigation-wrapper .container {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
 }
 
@@ -76,25 +68,44 @@ ul {
   width: 768px;
 }
 
+.main-navigation::before {
+  background: url("images/nav-logo.png");
+  content: "";
+  height: 70px;
+  left: calc(50% - 70px);
+  position: absolute;
+  width: 140px;
+}
+
 .site-navigation li {
   display: inline;
 }
 
 .main-navigation a {
-	background-color: #ffffff;
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
   padding-bottom: 18px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 25px;
   text-align: center;
 	text-decoration: none;
 }
 
+.site-navigation li:nth-child(1) {
+  margin-left: 10px;
+}
+
+.site-navigation li:nth-child(2) {
+}
+
 .site-navigation li:nth-child(3) {
-  margin-left: 120px;
+  margin-left: 123px;
+}
+
+.site-navigation li:nth-child(4) {
+  margin-left: 16px;
 }
 
 .main-navigation a:hover,
@@ -139,10 +150,6 @@ ul {
 }
 
 .first-reason {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   height: 258px;
   margin-top: 55px;
@@ -158,10 +165,6 @@ ul {
 }
 
 .more-advantages {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
 }
 
@@ -177,19 +180,11 @@ ul {
 }
 
 .another-three-reasons {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   margin-bottom: 60px;
 }
 
 .second-reason {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   height: 258px;
 }
@@ -250,10 +245,6 @@ ul {
 .social {
   display: flex;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 44px;
   margin-right: 44px;
@@ -311,10 +302,6 @@ ul {
 }
 
 .footer-content {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   height: 120px;
 }
@@ -391,21 +378,12 @@ ul {
   border: 3px solid #efefef;
   height: 290px;
   margin: 0 auto;
-  margin-top: ;
   padding: 55px;
   width: 470px;
 }
 
 .modal-search-form {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
   flex-direction: column;
   flex-wrap: wrap;
 }
